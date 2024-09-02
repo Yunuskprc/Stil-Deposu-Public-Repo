@@ -1,0 +1,485 @@
+.navCategory{
+    text-decoration: none;
+    color:#212529;
+    font-size: 15px;
+}
+
+.navHeaderButton{
+    text-decoration: none;
+    color: #202528
+}
+.navHeaderButton:hover{
+    color: #f37a1b;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -45px;
+    margin: 0;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-toggle:hover {
+    color: #f37a1b;
+}
+
+.navCategory::after {
+    display: none;
+}
+
+.dropdown-item:hover{
+    color: #f37a1b;
+}
+
+
+.icon-size-35x {
+    font-size: 35px; /* Font boyutu */
+    width: 35px; /* Genişlik */
+    height: 35px; /* Yükseklik */
+    display: inline-block; /* İkonların hizalanması için gerekli */
+    text-align: center; /* İkonları ortalamak için */
+    line-height: 35px; /* Dikey hizalama */
+}
+
+.secondRowInA{
+    text-decoration: none;
+    color: #767776;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/*  Products Cards  */
+
+.mainProductCards {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 330px;
+    max-width: 220px;
+    max-height: 350px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #e7e7e6;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative; /* Relative pozisyon */
+}
+
+.mainProductCards .imgClass {
+    width: 195px;
+    height: 210px;
+    margin-top: 5px;
+}
+
+.mainProductCards .content {
+    width: 195px;
+    height: 80px;
+    background-color: white;
+}
+
+.mainProductCards .content .title {
+    padding-top: 15px;
+    width: 195px;
+    height: 50px;
+    color: #4d5154;
+}
+
+.mainProductCards .content .body {
+    width: 195px;
+    height: 30px;
+}
+
+.mainProductCards .like {
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.mainBrandsCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #4d5154 1px solid;
+    border-radius: 5px;
+    height: 220px;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.mainBrandsCard:hover {
+    border-color: #f37a1b;
+    color: #f37a1b;
+}
+
+.mainBrandsCard h2 {
+    color: #4d5154;
+    transition: color 0.3s;
+}
+
+.mainBrandsCard:hover h2 {
+    color: #f37a1b;
+}
+
+.mainBrandsCard a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Filtreleme işlemleri için kullanılıyor.  */
+
+.BrandsPageFilterDiv {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 55px;
+    margin-top: 0.5px;
+}
+
+
+.filter-link {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 19px;
+    color: #202528;
+    padding-left: 20px;
+    height: 53px;
+}
+
+.BrandsPageFilterDiv .filter-link .dropdown-toggle {
+    width: 8px;
+    height: 8px;
+    border: solid #202528;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: -5px;
+}
+
+.BrandsPageFilterDiv .bodyDiv {
+    max-height: 155px;
+    overflow: auto;
+    background-color: #ffffff;
+    width: 100%;
+    transition: max-height 0.3s ease;
+    height: auto;
+}
+
+.BrandsPageFilterDiv .bodyDiv .form-check-label {
+    display: inline-block;
+    max-width: calc(100% - 30px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.BrandsPageFilterDiv .bodyDiv .form-check {
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+/*   Profil Sayfası  */
+
+.profileNavbarScopeDiv {
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #e7e6e7;
+    padding: 10px;
+}
+
+.profile-header {
+    display: block;
+}
+
+.profile-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.profileNavbarScopeDiv .profile-body a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+
+.profileNavbarScopeDiv .profile-body a :hover{
+    color: #f37a1b;
+    opacity: 0.8;
+}
+
+
+.profileNavbarScopeDiv .profile-body a i{
+    font-size: 15px;
+    opacity:0.8
+}
+
+
+/* adres kartları user için */
+.adressCart{
+    width: 300px;
+    height: 200px;
+    border:1px solid #e7e6e7;
+    border-radius: 5px;
+}
+
+.adressCart .adressHeader{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #e7e6e7;
+
+}
+
+.adressCart .adressBody{
+    width: 100%;
+    height: 160px;
+}
+
+.adressCart .adressBody a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #212529;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.adressCart .adressBody a:hover{
+    color: #f37a1b;
+}
+
+
+.adressCart .adressBody span{
+    font-size: 12px;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.adressBody span.long-text {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+/*  Debit Cards  */
+.debitCard{
+    width: 300px;
+    height: 130px;
+    border:1px solid #e7e6e7;
+    border-radius: 5px;
+}
+
+
+.debitCard .debitCardHeader{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #e7e6e7;
+
+}
+
+.debitCard .debitCardHeader a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #212529;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.debitCard .debitCardHeader a:hover{
+    color: #f37a1b;
+}
+
+
+
+.debitCard .debitCardBody{
+    width: 100%;
+    height: 90px;
+}
+
+.debitCard .debitCardBody span{
+    font-size: 13px;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* yorum - değerlendirme */
+.commentDiv {
+    width: 90%;
+    height: auto;
+    border: 1px solid #e7e6e7;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.commentDiv .commentImg {
+    min-width: 120px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commentDiv .commentImg img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+.commentDiv .commentMain {
+    flex-grow: 1;
+}
+
+.commentDiv .commentMain .commentHeader {
+    margin-top: 15px;
+}
+
+
+
+.commentDiv .commentMain .commentBody {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.commentDiv .commentMain .commentBody .col-7,
+.commentDiv .commentMain .commentBody .col-3,
+.commentDiv .commentMain .commentBody .col-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.commentBodyDeleteCommentA{
+    text-decoration: none;
+    color:black;
+    opacity:0.8;
+    font-size: 14px;
+}
+
+.commentBodyDeleteCommentA:hover{
+    color: #f37a1b;
+}
+
+
+
+/* Basket CSS*/
+.basketProduct{
+    border:1px solid #e7e6e7;
+    border-radius:5px;
+}
+
+.basketProduct .basketHeader{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-bottom:1px solid #e7e6e7;
+    border-width: 50%;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.basketProduct .basketHeader input:checked{
+    background-color: #f27a1a;
+    border-color: #f27a1a;
+}
+
+.basketProduct .basketBody{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.basketProduct .basketBody input:checked{
+    background-color: #f27a1a;
+    border-color: #f27a1a;
+}
+
+.basketProduct .basketBody img{
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.basketProduct .basketBody .col-6{
+    margin-top: -45px;
+}

@@ -1,0 +1,231 @@
+.headDivProfile {
+    border: 1px solid #e6e6e6;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headDivProfile h5{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 11px;
+    margin-right: 10px;
+
+}
+
+.bodyDivProfile{
+    border-top: 0px solid #e6e6e6; /* Üst kenara 0 px border */
+    border-right: 1px solid #e6e6e6; /* Sağ kenara 1 px border */
+    border-bottom: 1px solid #e6e6e6; /* Alt kenara 1 px border */
+    border-left: 1px solid #e6e6e6;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentProfile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.contentProfile .usersInfoDiv {
+    border-top: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-radius: 7px;
+    flex: 1;
+    height: 100%;
+}
+
+.cardAdress {
+    width: 250px;
+    height: 230px;
+    border: 1px solid #d2d3d3;
+    background: #fefeff;
+    border-radius: 5px;
+    color: #38395c;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cardAdress .adressTitle {
+    color: #38395c;
+    background-color: #fbfbfa;
+    border-bottom: 1px solid #e3e3e2;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cardAdress .adressBody {
+    background: #fefeff;
+    opacity: 0.9;
+    padding: 8px;
+    overflow: auto;
+    flex: 1;
+}
+
+.cardAdress .col {
+    word-wrap: break-word;
+    margin-bottom: 4px;
+}
+
+.newAdressBtn {
+    border: 1px solid #f27a1a;
+    border-radius: 2px;
+    color: #f27a1a;
+    background: white;
+}
+
+
+
+
+.cartDebit{
+    width: 240px;
+    height: 185px;
+    border: 1px solid #d2d3d3;
+    background: #fefeff;
+    border-radius: 5px;
+    color: #38395c;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cartDebit .cartTitle {
+    color: #38395c;
+    background-color: #fbfbfa;
+    border-bottom: 1px solid #e3e3e2;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cartDebit .cartBody {
+    background: #fefeff;
+    opacity: 0.9;
+    padding: 8px;
+    overflow: auto;
+    flex: 1;
+}
+
+.cartDebit .col {
+    word-wrap: break-word;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 1200px) {
+    .cardAdress {
+        width: 200px;
+        height: 210px;
+        font-size: 13px;
+    }
+
+    .cardAdress .adressTitle {
+        font-size: 13px;
+    }
+
+    .cardAdress .adressBody {
+        font-size: 11px;
+    }
+
+    .headDivProfile h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cardAdress {
+        width: 180px;
+        height: 200px;
+        font-size: 12px;
+    }
+
+    .cardAdress .adressTitle {
+        font-size: 12px;
+    }
+
+    .cardAdress .adressBody {
+        font-size: 10px;
+    }
+
+    .headDivProfile h5 {
+        font-size: 15px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardAdress {
+        width: 150px;
+        height: 180px;
+        font-size: 11px;
+    }
+
+    .cardAdress .adressTitle {
+        font-size: 11px;
+    }
+
+    .cardAdress .adressBody {
+        font-size: 9px;
+    }
+
+    .headDivProfile h5 {
+        font-size: 14px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cardAdress {
+        width: 100%;
+        height: auto;
+        font-size: 10px;
+    }
+
+    .cardAdress .adressTitle {
+        font-size: 10px;
+    }
+
+    .cardAdress .adressBody {
+        font-size: 8px;
+    }
+
+    .headDivProfile h5 {
+        font-size: 13px;
+    }
+
+    .bodyDivProfile a {
+        font-size: 14px;
+    }
+
+    .main-content {
+        padding: 5px;
+    }
+
+    .contentProfile {
+        margin: 10px 0;
+    }
+
+    .newAdressBtn {
+        width: 100%;
+        font-size: 12px;
+    }
+}
